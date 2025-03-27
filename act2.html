@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Style Example</title>
+    <style>
+        #style-target {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div id="style-target">Original Style</div>
+    <button onclick="changeStyle()">Click to Change Style</button>
+
+    <script>
+        function changeStyle() {
+            const target = document.getElementById("style-target");
+            target.style.backgroundColor = "pink";
+            target.style.color = "white";
+            target.style.borderRadius = "20px";
+            target.style.fontWeight = "bold";
+            target.textContent = "Style Changed!";
+        }
+    </script>
+</body>
+</html>
